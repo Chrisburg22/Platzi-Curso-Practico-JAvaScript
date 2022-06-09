@@ -4,10 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Geometrica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    :root {
+      --white: #FFFFFF;
+      --black: #000000;
+      --very-light-pink: #C7C7C7;
+      --text-input-field: #F7F7F7;
+      --hospital-green: #ACD9B2;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px;
+    }
+    body{
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .calculadora{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+    header{
+        text-align: center;
+    }
+    header h1{
+        color: var(--hospital-green);
+        font-weight: bold;
+    }
+    header p{
+        background-color: var(--hospital-green);
+        color: var(--black);
+        font-size: var(--md);
+        font-weight: bold;
+    }
+    .main{
+        height: 100vh;
+        width: 100%;
+        margin:  10px 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main div{
+        display: grid;
+        grid-template-columns: auto 1fr auto ;
+        border: 1px solid var(--black);
+        border-radius: 8px;
+        height: 500px;
+    }
+    .main div form{
+        width: 100%;
+         display: grid;
+    
+    }
+    .main div form input{
+        border: 1px solid var(--hospital-green);
+        height: 30px;
+    }
+    .button{
+        height: 200px !important;
+        display: flex !important;
+        justify-content: space-around;
+        align-items: center;
+        border: none !important;
+    }
+    .button button{
+        margin: 10px 10px;
+        background-color: var(--hospital-green);
+        color: var(--black);
+        font-size: var(--md);
+        font-weight: bold;
+        height: 40px;
+        width: 100px;
+    }
+    </style>
 </head>
 <body>
-    <h1>Calculadora Geometrica</h1>
+<div class="calculadora">
+    <header>
+        <h1>Calculadora Geometrica</h1>
+        <p>Este es el primer taller del curso practico de JavaScript</p>
+    </header>
+
+    <main class="main">
+       
+        <div  >
+            <form action="" >
+                <label for="InputCuadrado" >Escribe cuando mide uno de los cuadrado</label>
+                <input type"number"  id="InputCuadrado">
+                <div class="button">
+                    <button  type_"button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+                    <button  type_"button" onclick="calcularAreaCuadrado()">Calcular el area</button>
+                </div>
+                
+            </form>
+        </div>
+
+        <div >
+            <form action="">
+                 <label for="InputTriangulo" >Escribe la medida del primer lado triangulo</label>
+                <input type"number"  id="InputTriangulo">
+                
+                <label for="InputTriangulo2">Escribe la medida del segundo lado</label>
+                <input type"number"  id="InputTriangulo2">
+               
+                <label for="InputTriangulo3">Escribe la medida de la base</label>
+                <input type"number"  id="InputTriangulo3">
+               
+                <label for="InputTriangulo4">Escribe la medida de la Altura</label>
+                <input type"number"  id="InputTriangulo4">
+                
+                <div class="button">
+                    <button  type_"button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+                    <button  type_"button" onclick="calcularAreaTriangulo()">Calcular el area</button>
+                </div>
+                
+            </form>
+        </div>
+
+        <div >
+            <form action="">
+                <label for="InputCirculo" >Escribe cuando mide el radio del circulo</label>
+                <input type"number"  id="InputCirculo">
+
+                <div class="button">
+                    <button  type_"button" onclick="calcularPerimetroCirculo()">Calcular el perimetro</button>
+                    <button  type_"button" onclick="calcularAreaCirculo()">Calcular el area</button>
+                </div>
+  
+            </form>
+        </div>
+
+
+
+    </main>
+  </div>  
     <script src="./figurasGeometricas.js"></script>
 </body>
 </html>
