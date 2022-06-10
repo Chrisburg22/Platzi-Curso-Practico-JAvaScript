@@ -19,6 +19,22 @@ function aplicandoDescuento(precio, descuento){
     return precioFinal;
 }
 
+function ValidarCupon(coupon){
+
+    if(coupon === "Chrisburg22"){
+        return 25;
+    } else if (coupon === "ZoroCoupon"){
+        return 15;
+    } else if (coupon === "PlatziCoupon"){
+        return 20;
+    } else if (coupon === "MasterCoupon" ){
+        return 45;
+    } else {
+        alert("El cupon " + coupon + " no es valido");
+        return 0;
+    }
+
+}
 //Interactuando con HTML
 
 function onClickButtonPriceDiscount(){
@@ -29,10 +45,15 @@ function onClickButtonPriceDiscount(){
     const discount=document.getElementById("inputDiscount");
     const discountValue=discount.value;
 
-    const discountPrice = aplicandoDescuento(priceValue, discountValue);
+    const coupon=document.getElementById("inputCoupon");
+    const couponValue=coupon.value;
 
-    const finalPrice = document.getElementById("FinalPriceDiscount");
-    finalPrice.innerText = "El Precio final del producto con el descuento aplicado es de $" + discountPrice;
+   const discountPrice = aplicandoDescuento(priceValue, discountValue);
+   const validcoupon = ValidarCupon(couponValue);
+   const couponPrice= aplicandoDescuento(discountPrice, validcoupon);
+   
+   const finalPrice = document.getElementById("FinalPriceDiscount");
+   finalPrice.innerText = "El Precio final del producto con el descuento aplicado es de $" + couponPrice;
 }
 
 

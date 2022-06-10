@@ -27,9 +27,18 @@
         .discountContainer{
             width: 100%;
             height: 100vh;
-            background-color: var(--hospital-green);
+            background-color: var(--text-input-field);
             display: grid;
             place-items: center;
+        }
+        .discountContainer header{
+            display: grid;
+            place-items: center;
+        }
+        .discountContainer header p{
+            margin:0;
+            font-size: var(--lg);
+            font-weight: bold;
         }
         .discountCart{
             width: 500px;
@@ -72,19 +81,6 @@
             border-radius: 4px;
         }
         .primary-button {
-            background-color: var(--hospital-green);
-            border-radius: 8px;
-            border: 1px solid var(--black);
-            color: var(--black);
-            width: 100%;
-            cursor: pointer;
-            font-size: var(--lg);
-            font-weight: bold;
-            height: 50px;
-            margin-top: 40px;
-          }
-          
-          .discountCart figure p{            
             background-color: var(--white);
             border-radius: 8px;
             border: 1px solid var(--black);
@@ -96,16 +92,33 @@
             height: 50px;
             margin-top: 40px;
           }
+          .primary-button:hover{
+              background-color: var(--hospital-green);
+          }
+          .discountCart figure p{            
+            background-color: var(--white);
+            border-radius: 8px;
+            border: 1px solid var(--black);
+            color: var(--black);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--lg);
+            font-weight: bold;
+            height: 50px;
+            margin-top: 12px;
+          }
    </style>
 </head>
 <body>
     <div class="discountContainer">
+        
+        <header>
+            <h1>Porcentajes y Descuentos</h1>
+            <p>Este es el segundo taller de Javascrip</p>
+        </header>
 
         <div class="discountCart">
-            <header>
-                 <h1>Porcentajes y Descuentos</h1>
-                 <p>Este es el segundo taller de Javascrip</p>
-            </header>
+            
            
             <figure>
 
@@ -117,6 +130,11 @@
                 <div>
                     <label for="inputDiscount">Ingre el porcentaje de descuento</label>
                     <input type="number" id="inputDiscount">
+                </div>  
+        
+                <div>
+                    <label for="inputCoupon">Ingre el porcentaje de descuento</label>
+                    <input type="text" id="inputCoupon">
                 </div>
 
                 <div>
