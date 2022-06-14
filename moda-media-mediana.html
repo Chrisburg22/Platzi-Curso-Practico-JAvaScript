@@ -67,7 +67,7 @@
         }
         .bottonsFunction{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
     </style>
@@ -91,29 +91,28 @@
             </div>
             
             <div>
-                <p>Lista</p>
                 <p id="FinalList" ></p>
             </div>
             
             <div class="bottonsFunction">
                 <div>
-                    <button>Calcular Moda</button>
-                    <p id="calcularModaP"></p>
+                    <button type="button" onclick="onClickButtonPromedio()">Promedio</button>
+                    <p id="calcularPromedioP"></p>
                 </div>
                 
                 <div>
-                    <button>Calcular Mediana</button>
+                    <button type="button" onclick="onClickButtonMediana()">Mediana</button>
                     <p id="calcularMedianaP"></p>
                 </div>
                 
                 <div>
-                    <button>Calcular Media</button>
-                    <p id="calcularMediaP"></p>
+                    <button type="button" onclick=" onClickButtonModa()">Moda</button>
+                    <p id="calcularModaP"></p>
                 </div>
             </div>
             
         </main>
-    
     </div>
+    <script src="./moda-media-mediana.js"></script>
 </body>
 </html>
