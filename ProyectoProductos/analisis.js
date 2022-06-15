@@ -1,5 +1,3 @@
-const listaPoductos = [];
-
 function calcularUtilidadBruta(producto){
     const utilidadBruta = (producto.costoCompra + ( producto.costoCompra * producto.porcentaje) );
     return utilidadBruta;
@@ -9,18 +7,10 @@ function ganacioPorProducto(producto){
     return  calcularUtilidadBruta(producto) - producto.costoCompra;
 }
 
-
 //FUNCIONES PARA EL PANDA 
-listaPoductos.push(
-    {
-        name: "panda",
-        costoCompra: 269,
-        porcentaje: 0.2,
-    }
-);
 function onClickPanda()  {
-   const costoVenta = parseInt( calcularUtilidadBruta(listaPoductos[0]) );
-    const gananciaProducto = parseInt( ganacioPorProducto(listaPoductos[0]) );
+   const costoVenta = calcularUtilidadBruta(listaPoductos[0]);
+    const gananciaProducto = ganacioPorProducto(listaPoductos[0]);
 
     const imprimirCompra = document.getElementById("precioCompraPanda");
     imprimirCompra.innerText = "Precio de Compra: " + listaPoductos[0].costoCompra;

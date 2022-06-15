@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>PlanDeAhorro</title>
+    <style>
+        :root{
+            --Orange: #fb7413;
+            --blackOrange: #FF4500;
+            --White: #ffffff;
+            --MediumGrey: 	#959eac;
+            --DarkBlue: 	#252d37;
+            --VeryBlackBlue: 	#121417;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            overflow-x: hidden;
+            text-size-adjust: 100%;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            background-color: var(--VeryBlackBlue);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        header {
+            margin: 0;
+            text-align: center;
+            width: 100%;
+            height: 100px;
+        }
+        header h1{
+            color: var(--MediumGrey);
+            font-size: 56px;
+            font-weight: bold;
+        }
+        .product-cart{
+            width: 320px;
+            height:  480px;
+            background-color: var(--DarkBlue);
+            margin-bottom: 20px;
+            margin-right: 24px;;
+            border-radius: 16px;
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+        }
+        .box {
+            width: 268px;
+            height: 260px;
+            margin-top: 24px;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 12px;
+        }
+        .cover {
+            object-fit: cover;
+        }
+        h1{
+            color: var(--White);
+            font-size: 36px;
+            margin: 8px 0;
+        }
+        .title{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 8px;
+        }
+        button{
+            font-weight: bold;
+            margin-top: 16px;
+            margin-right: 8px;
+            width: 140px;
+            height: 40px;
+            background-color: var(--Orange);
+            box-shadow: var(--blackOrange) 4px 4px 0px;
+            border-radius: 8px;
+            border: none;
+            transition: transform 200ms, box-shadow 200ms;
+        }
+        button:active {
+            transform: translateY(4px) translateX(4px);
+            box-shadow: var(--blackOrange) 0px 0px 0px;
+        }
+        p{
+            margin: 4px 0;
+            text-align: center;
+            color: var(--MediumGrey);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header> 
+            <h1>Lista Productos CreewSnikers</h1>
+        </header>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button"  onclick=" onClickPanda() " >Ver más</button>
+            </div>
+            <p id="precioCompraPanda"></p>
+             <p id="porcentajePanda"></p>
+             <p id="costoVentaPanda"></p>
+             <p id="ganaciaProductoPanda"></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+        <section class="product-cart">
+            <div class="box"> 
+                <img src="https://images.pexels.com/photos/4062907/pexels-photo-4062907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="panda" class="cover">
+            </div>
+            <div class="title">
+                 <h1>Panda</h1>
+                 <button type="button" class="primary-button">Ver má</button>
+            </div>
+             <p></p>
+             <p></p>
+             <p></p>
+             <p></p>
+        </section>
+       
+    </main>
+    <script src="./productos.js"></script>
+    <scrip src="./analisis.js"></scrip>
+    
+</body>
+</html>
